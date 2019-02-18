@@ -3,53 +3,193 @@ body{
     font-family: "Open Sans", sans-serif;
    }
 
+
+
+/* MOBILE NAV BAR */
+@media screen and (min-width: 481px) {
+    .mobile-container {
+        display: none;
+    }
+    
+    .mobile-nav {
+        display: none;
+    }
+    
+    .mobile-nav #myLinks {
+        display: none;
+    }
+    
+    .mobile-nav a {
+        display: none;
+    }
+    
+    .mobile-nav a.icon {
+        display: none;
+    }
+    
+    .mobile-nav a:hover {
+        display: none;
+    }
+    
+    .active {
+        display: none;
+    }
+}
+@media screen and (max-width: 480px) {
+    
+    /* .mobile-container { */
+        /* .topnav { */
+            /* background-color: #31383f;
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+            
+          } */
+          
+          .mobile-nav {
+              /* overflow: hidden; */
+              /* background-color: #333; */
+              position: relative;
+              /* height: 500px; */
+            }
+            
+            .mobile-nav #myLinks {
+                display: none;
+            }
+            
+            .mobile-nav a {
+                color: white;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                display: block;
+            }
+            
+            .mobile-nav a.icon {
+                /* background: black; */
+                display: block;
+                position: absolute;
+                right: 25px;
+                top: -25px;
+            }
+            
+            .mobile-nav a:hover {
+                /* background-color: #ddd; */
+                /* color: black; */
+            }
+            
+            .active {
+                /* background-color: #4CAF50; */
+                color: white;
+            }
+        }
+
+
 /* Add a black background color to the top navigation */
-.topnav {
-    background-color: #31383f;
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-    /* display: block; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-  }
-  
-  .topnav-container {
-    padding-top: 20px; 
-    padding-bottom: 20px; 
-    /* width: 1200px; */
-    max-width: 90%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    /* padding: 8px 8px; */
-    text-decoration: none;
-    /* font-size: 17px; */
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: #d6aa47;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #4CAF50;
-    color: white;
-  }
+@media screen and (min-width: 481px) {
+    .topnav {
+        background-color: #31383f;
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+        /* display: block; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        
+      }
+      
+      .topnav-container {
+        padding-top: 20px; 
+        padding-bottom: 20px; 
+        /* width: 1200px; */
+        max-width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        width: 1200px;
+                max-width: 90%;
+                margin: 0 auto;
+      }
+      /* Style the links inside the navigation bar */
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        /* padding: 8px 8px; */
+        text-decoration: none;
+        /* font-size: 17px; */
+      }
+      
+      /* Change the color of links on hover */
+      .topnav a:hover {
+        background-color: #ddd;
+        color: #d6aa47;
+      }
+      
+      /* Add a color to the active/current link */
+      .topnav a.active {
+        background-color: #4CAF50;
+        color: white;
+      }
+}
+@media screen and (max-width: 480px) {
+    .topnav {
+        background-color: #31383f;
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+        /* display: block; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        
+      }    
+    
+    .topnav-container {
+        padding-top: 20px; 
+        padding-bottom: 20px; 
+        /* width: 1200px; */
+        max-width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        width: 1200px;
+                max-width: 90%;
+                margin: 0 auto;
+                }
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        /* padding: 8px 8px; */
+        text-decoration: none;
+        /* font-size: 17px; */    }
+    
+    /* Change the color of links on hover */
+    .topnav a:hover {
+        display: none;
+    }
+    
+    /* Add a color to the active/current link */
+    .topnav a.active {
+        display: none;
+    }
+}
 
   .give {
-    color: #31383f; 
+    color: #31383f !important; 
     background: white;
     border-radius: 8px; 
     font-weight: 700; 
@@ -57,6 +197,7 @@ body{
     height: 30px; 
     width: 100px; 
     padding: 0 auto;
+    opacity: 1;
   }
 
 
@@ -112,6 +253,8 @@ body{
         .desktop {display: none;}
     }
     
+
+@media screen and (min-width: 481px) {
     ul {
         display: flex; 
         justify-content: flex-end; 
@@ -125,12 +268,22 @@ body{
     li {
         float: right;
     }
+}
+@media screen and (max-width: 480px) {
+    ul {
+        display: none;
+    }
+    
+    li {
+        display: none;
+    }
+}
     
     .nav_link {
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
         font-size: 14px; 
-        padding: 0px 0px 0px 15px; 
+        padding: 0px 0px 0px 0px; 
         width: 100px;
     }
 
@@ -176,13 +329,24 @@ body{
         /* width: 100%;  */
         /* padding-right: 70px;  */
         margin: 0 auto;
-        width: 325px !important;
+        width: 300px !important;
         padding: 20px;
     /* margin: auto; */
         /* order: 1; */
     }
 }
-    
+
+@media screen and (min-width: 481px) {
+    .main {
+        display: flex;     
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        /* padding-top: 50px; */
+        padding-bottom: 50px;
+        margin-bottom: 75px;
+    }
+}
+@media screen and (max-width: 480px) {
     .main {
         display: flex;     
         flex-direction: row;
@@ -191,6 +355,7 @@ body{
         padding-bottom: 50px;
         margin-bottom: 75px;
     }
+}
 
 @media screen and (min-width: 481px) {
     h1 {
@@ -266,8 +431,22 @@ h1 {
 }
 
 
-padding: 20px 15px 0 15px !important;
+/* padding: 20px 15px 0 15px !important; */
 
+@media screen and (min-width: 481px) {
+    .right-container-box {
+        background-color: #eef0f1; 
+        width: 100%; 
+        padding: 35px 15px 10px 40px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .right-container-box {
+        background-color: #eef0f1; 
+        width: 100%; 
+        padding: 20px 15px 0 15px !important;
+    }
+}
 
 
 @media screen and (max-width: 480px) {
@@ -283,6 +462,7 @@ padding: 20px 15px 0 15px !important;
         border-radius: 10px;
         margin-bottom: 10px;
         width: 250px;
+        
     }
 
     .date div img {
@@ -400,12 +580,12 @@ padding: 20px 15px 0 15px !important;
     padding-right: 5px;
 }
 
-button #myAnchor {
+#myAnchor {
     border-style: none;
     border-width: 0;
     padding: 0;
     border-color: white !important;
-    background-color: white;
+    background: white;
     /* padding: 0; */
     /* border-width: 0; */
 }
@@ -420,12 +600,24 @@ button #myAnchor {
     border-radius: 10px 0 0 10px;
 }
 
-.share {
-    text-align: center;     
-    margin-bottom: 20px;
-    font-family: 'Open Sans', 'Open Sans';
-    font-size: 25px;
-    font-weight: 900;
+@media screen and (min-width: 481px) {
+    .share {
+        text-align: center;     
+        margin-bottom: 20px;
+        font-family: 'Open Sans', 'Open Sans';
+        font-size: 25px;
+        font-weight: 900;
+    }
+}
+@media screen and (max-width: 480px) {
+    .share {
+        text-align: center;     
+        margin-bottom: 20px;
+        font-family: 'Open Sans', 'Open Sans';
+        font-size: 25px;
+        font-weight: 900;
+        padding-top: 40px;
+    }
 }
 
 @media screen and (min-width: 481px) {
@@ -647,7 +839,7 @@ input {
         display: flex;
         flex-grow: 1;
         order: 0;
-        padding: 20px 15px 0 15px !important;
+        /* padding: 20px 15px 0 15px !important; */
     }
 }
 @media screen and (min-width: 481px) {
@@ -723,6 +915,8 @@ h4 {
     .office-info-span {
         color: #ffffff; 
         font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
 @media screen and (max-width: 480px) {

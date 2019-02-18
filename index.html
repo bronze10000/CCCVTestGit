@@ -9,6 +9,7 @@
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css"/>
     <!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" /> -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -17,6 +18,45 @@
     <div class="topnav">
         <div class="topnav-container">
             <a href="#home"><img src="./imgs/CCCV White.png" alt="CCCV logo" style="width: 80px;"></a>
+
+
+<!-- MOBILE NAV BAR -->
+        
+        <!-- Simulate a smartphone / tablet -->
+        <!-- <div class="mobile-container"> -->
+        
+        <!-- Top Navigation Menu -->
+        <div class="mobile-nav">
+          <a href="#home" class="active">Logo</a>
+          <div id="myLinks" style="flex-direction: column;">
+            <a href="#MEDIA">MEDIA</a>
+            <a href="#CONNECT">CONNECT</a>
+            <a href="#EVENTS">EVENTS</a>            
+            <a href="#SERVE">SERVE</a>
+            <a href="#GIVE">GIVE</a>
+            <a href="#SEARCH">SEARCH</a>
+
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction2()">
+            <i class="fa fa-bars">Menu</i>
+          </a>
+        </div>
+
+        
+        <!-- End smartphone / tablet look -->
+        <!-- </div> -->
+        
+        <script>
+        function myFunction2() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "flex") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "flex";
+          }
+        }
+        </script>
+
             <ul>
                 <li>
                     <a class="nav_link" href="#media">MEDIA</a>
@@ -69,7 +109,7 @@
                         <div>
                             <img src="./imgs/Date.svg" alt="" style="width: 20px; padding: 26px ">
                         </div>
-                        <div style="background-color: #eef0f1; width: 100%; padding: 35px 15px 10px 40px">
+                        <div class="right-container-box" >
                             <h2  class="h2-travel-info">DATE</h2>
                                     <p class="sub-paragraph">March 17 - 28</p>
                         </div>
@@ -81,7 +121,7 @@
                         <div>
                             <img src="./imgs/Cost.svg" alt="" style="width: 20px; padding: 26px ">
                         </div>
-                        <div style="background-color: #eef0f1; width: 100%; padding: 35px 15px 10px 40px">
+                        <div  class="right-container-box">
                             <h2 class="h2-travel-info">COST</h2>
                                 <p class="sub-paragraph">$3957</p>
                         </div>
@@ -93,13 +133,13 @@
                         <div>
                             <img src="./imgs/Contact.svg" alt="" style="width: 20px;  padding: 26px ">
                         </div>
-                        <div style="background-color: #eef0f1; width: 100%; padding: 35px 15px 10px 40px; font-size: 14px">
+                        <div  class="right-container-box">
                             <h2 class="h2-travel-info">CONTACT</h2>
                             Carin Schaller 
                             <br>
                             (909) 464-8255 Ext. 263
                             <br>
-                            <a id="footerEmail" href="mailto:contact@calvaryccv.org" target="_blank" style="text-decoration:underline;    color: #000000;font-size: 14px
+                            <a id="footerEmail" href="mailto:carins@calvaryccv.org" target="_blank" style="text-decoration:underline;    color: #000000;font-size: 14px
                             ">carins@calvaryccv.org</a>
                             </p>
                         </div>
@@ -116,17 +156,16 @@
                         <div
                             style="display: flex; justify-content: center;"
                         >
-                            <a href="http://www.facebook.com/sharer.php?u=http://127.0.0.1:5500/index.html#give/" data-elementor-open-lightbox="" target="_blank" class="no-lightbox">
+                            <a href="http://www.facebook.com/sharer.php?u=https://bronze10000.github.io/CCCVTestGit/#home" data-elementor-open-lightbox="" target="_blank" class="no-lightbox">
                                 <img class="social" src="./imgs/Facebook.svg" alt="Facebook" >
                             </a>
 
-                            <a href="mailto:?to=&amp;body=http://127.0.0.1:5500/index.html#give" data-elementor-open-lightbox="" target="_blank" class="no-lightbox">
+                            <a href="mailto:?to=&amp;body=https://bronze10000.github.io/CCCVTestGit/#home" data-elementor-open-lightbox="" target="_blank" class="no-lightbox">
                                 <img class="social" src="./imgs/Email.svg" alt="Email" >
                             </a>
                             <div>
                                 
-                                <button id="myAnchor" href="http://127.0.0.1:5500/index.html#give" 
-                                    style="padding: 0; border-width: 0;"
+                                <button id="myAnchor" href="https://bronze10000.github.io/CCCVTestGit/#home" 
                                 onclick="myFunction()" >    
                                     <img class="social" src="./imgs/Link.svg" alt="Link">
                                 </button>
@@ -176,21 +215,22 @@
                     <h4>
                         OFFICE INFO
                     </h4>
-                    <p class="office-info-para">
+                    <p>
+                            <!-- <p class="office-info-para"> -->
                         <span class="footer-strong">ADDRESS</span><br>
                         <span class="office-info-span">12205 Pipeline Ave. Chino, CA 91710</span>
                     </p>
-                    <p class="office-info-para">
+                    <p>
                         <span class="footer-strong">HOURS</span><br>
                         <span  class="office-info-span">
                             Mon - Fri 9am - 5pm</span>
                     </p>
-                    <p class="office-info-para">
+                    <p>
                         <span class="footer-strong">PHONE</span><br> 
                         <span  class="office-info-span">
                             (909) 464-8255</span>
                     </p>
-                    <p class="office-info-para">
+                    <p>
                         <span class="footer-strong">EMAIL</span><br>
                         <span   class="office-info-span"></span><a id="footerEmail" href="mailto:contact@calvaryccv.org" target="_blank">
                             contact@calvaryccv.org</a></span>
@@ -223,19 +263,19 @@
                 </div>
             </div>
         </div>
-            <div id="footer-bottom" class="no-footer-nav" 
-                style="    background-color: #32393f;
-                width: 1200px;
-    max-width: 90%;
-    margin: 0 auto;
-                "
-            >
-                <div id="footer-bottom-inner">
-                    <div id="copyright" role="contentinfo">
-                        Calvary Chapel Chino Valley © 2017 All Rights Reserved			
-                    </div>
+        <div id="footer-bottom" class="no-footer-nav" 
+            style="    background-color: #32393f;
+            width: 1200px;
+            max-width: 90%;
+            margin: 0 auto;
+            "
+        >
+            <div id="footer-bottom-inner">
+                <div id="copyright" role="contentinfo">
+                    Calvary Chapel Chino Valley © 2017 All Rights Reserved			
                 </div>
             </div>
+        </div>
     </div>
 </div>
 </body>
